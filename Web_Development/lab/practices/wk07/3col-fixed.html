@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 7 practice: float layout, aside, article semantic element, float property, position of elements, and fonts.</title>
+  <meta name="description" content="week 7 lab, float, columns, position, fonts">
+  <meta name="keywords" content="=week 7 CSS, border, margin">
+  <link rel="shortcut icon" href="assets/img/favicon4.ico">
+  <meta name="Author" content="Nathan Prince">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+
+    body{
+      background-color: lightcyan;
+      border: 2px solid black;
+      width:964px;
+      margin: 15px auto;
+    }
+
+    header{
+      border-bottom: 2px solid green;
+    }
+
+    footer{
+      border-top: 2px solid green;
+    }
+
+    #sidebarA{
+      border-right: 2px solid red;
+      float: left;
+      height: 350px;
+      width: 180px;
+    }
+
+    #sidebarB{
+      border-right: 2px solid red;
+      float: right;
+      height: 350px;
+      width: 180px;
+    }
+
+    main{
+      height: 350px;
+      width: 600px;
+      float: left;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+
+    footer{
+      clear: both;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h2>Header</h2>
+</header>
+
+<aside id="sidebarA">
+  <h2>Sidebar A</h2>
+</aside>
+
+<main>
+  <h2> Main Content</h2>
+  <p>Hover over this wiuth the mouse cursor</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae dolorum illo quas quidem quod.</p>
+</main>
+
+<aside id="sidebarB">
+  <h2>SidebarB</h2>
+</aside>
+
+<footer>
+  <h2>Footer</h2>
+</footer>
+
+<script src="https://my.gblearn.com/js/loadscript.js"></script>
+</body>
+</html>

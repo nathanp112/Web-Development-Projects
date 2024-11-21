@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 9 Practice</title>
+  <meta name="description" content="Tables">
+  <meta name="keywords" content="=Tables">
+  <meta name="Author" content="Nathan Prince">
+  <link rel="shortcut icon" href="assets/img/favicon4.ico">
+  <link rel="stylesheet" href="assets/css/wk09main.css">
+
+
+</head>
+<body>
+
+<!--tables are tabular data formed by rows and columns.
+    A table is made up of rows using tr tag
+    You have a table made up of rows and within that you have data cells using td tag.
+    There is no such thing as a column cell
+    You get columns by adding rows and data that stack up to form columns
+    note: you must have equal number of data cells within each row.
+    colspan: span columns
+    rowspan: spans rows
+
+    vertical cell alignment: can be left, centre or right
+    thread tag is for table header (optional, good to have)
+    tr tag is within tbody tag (optional, good to have)
+    tfoot is for table footer (optional, good to have)
+    cell padding: refers to cushion around cells
+    cell spacing: refers to space between cells (border doesn't get thicker)
+    cell width and height can be changed as well.
+    when height is given to a cell, all cells in the row will adhere to that height.
+    same with width of cell.
+
+-->
+
+<!-- table 1
+
+<table>
+
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+
+
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+
+
+
+</table>
+
+-->
+
+<!-- table 2-->
+
+<table>
+
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td rowspan="3">6</td>
+  </tr>
+
+
+  <tr class="table-row3">
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+
+  <tr><td>10</td>
+      <td>11</td>
+
+  </tr>
+
+  <tr>
+
+    <td>12</td>
+    <td colspan="3">13</td>
+    <td>14</td>
+    <td>15</td>
+
+  </tr>
+
+
+
+</table>
+</body>
+</html>

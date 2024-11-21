@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 10 Exercise</title>
+    <meta name="description" content="Week 10 Exercise">
+    <meta name="keywords" content="=Week 10 Exercise">
+    <meta name="Author" content="Nathan Prince">
+    <link rel="shortcut icon" href="assets/img/favicon4.ico">
+
+    <style>
+        body{
+            background-color: lightgray;
+        }
+
+        label{
+            font-size:.8rem;
+            justify-content: left;
+
+        }
+
+        input[type='reset'],
+        input[type='submit']{
+            width: 10rem;
+            height: 2rem;
+            justify-content: end;
+            border-radius: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            justify-content: left;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+
+        }
+        label {
+            display: block;
+
+        }
+
+        .form-group1{
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns:  1fr 1fr 1fr 1fr;
+
+        }
+
+        .form-group2{
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns:  1fr 1fr 1fr 1fr;
+            margin-bottom: 15px;
+        }
+
+        fieldset{
+            border: black 2px solid;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<fieldset class="container">
+    <legend>Application Form</legend>
+    <div class="container">
+        <form  method="post" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" name="name" id="name" style="width: 425px;" placeholder="Your Name" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" class="form-control" name="subject" id="subject" style="width: 425px;" placeholder="COMP 1234 Week 10" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" style="width: 425px;"  placeholder="firstname.lastname@georgebrown.ca" required>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message"  rows="5" cols="50" placeholder="Enter Message..."></textarea>
+            </div>
+
+            <div class="form-group1">
+                <label for="date">Birthdate:</label>
+                <input type="date" name="date" id="date" min="2023-01-01">
+            </div>
+
+            <div class="form-group1">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="12" max="101">
+            </div>
+
+            <div class="form-group1">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Type Here" required >
+            </div>
+        </form>
+    </div>
+
+
+<br>
+
+<fieldset>
+    <legend>Favourite Foods</legend>
+
+    <div class="form-group2">
+        <label for="pizza">Pizza:</label>
+        <input type="checkbox" name="pizza" id="pizza">
+    </div>
+
+    <div class="form-group2">
+        <label for="hamburger">Hamburger:</label>
+        <input type="checkbox" name="hamburger" id="hamburger">
+
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Favourite Sports</legend>
+    <div class="form-group2">
+        <label for="soccer">Soccer:</label>
+        <input type="radio" name="soccer" id="soccer">
+    </div>
+
+    <div class="form-group2">
+        <label for="volleyball">Volleyball:</label>
+        <input type="radio" name="volleyball" id="volleyball">
+    </div>
+</fieldset>
+<div class="form-group2">
+    <label for="eyecolour">Eye Colour:</label>
+    <select id="eyecolour" multiple>
+        <option value="Hazel">Hazel</option>
+        <option value="Brown">Brown</option>
+    </select>
+</div>
+
+<div class="form-group2">
+    <label for="file">File:</label>
+    <input type="file" id="file">
+</div>
+
+<div class="form-group2">
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+</div>
+
+<div class="form-group2">
+    <label for="url">URL:</label>
+    <input type="url" name="url" id="url">
+</div>
+
+<div class="form-group2">
+    <label for="colour">Colour</label>
+    <input type="color" name="colour" id="colour">
+</div>
+
+<form>
+    <div class="controls">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Send Message">
+    </div>
+</form>
+
+</fieldset>
+
+<footer>Copyright &copy; Nathan Prince</footer>
+
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

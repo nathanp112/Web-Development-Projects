@@ -1,0 +1,246 @@
+
+* {
+    margin: 0; /* removes default 8px margin on page */
+    padding: 0; /* removes padding on page */
+    /*box-sizing: content-box; /* allows to include padding and border on an element */
+
+}
+
+@font-face{
+    font-family: GermaniaOne;
+    src: url("../fonts/GermaniaOne-Regular.ttf");
+}
+
+header{
+    border: 3px black solid;
+    text-align: center;
+    text-shadow: yellow 1px 1px 1px;
+    background-size: 100% 100%;
+    background: linear-gradient(to bottom, red, yellow, black) fixed;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+    border-radius: 10px;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 20px 20px;
+    justify-content: center;
+}
+
+.menu a{
+    display:block;
+    padding: 5px 30px;
+    color:black;
+    background-color: yellow;
+    border: 3px solid red;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 6px black;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+
+}
+
+.menu a:hover{
+    max-width: 100%;
+    transition: transform 0.2s;
+    transform: scale(1.1) translateY(-10px);
+}
+
+.info p{
+    font-size: 30px;
+    text-shadow: red 1px 1px 1px;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+}
+
+.info h2{
+    font-size: 40px;
+    text-shadow: red 1px 1px 1px;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+}
+
+.logo img{
+    border: 1px solid black;
+}
+
+.s2 img:hover{
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+
+}
+
+section h2{
+    font-size: 30px;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+}
+
+.s1 p{
+    font-size: 30px;
+}
+
+.s1 article{
+    font-size: 30px;
+}
+
+.s1 address{
+    font-size: 30px;
+}
+
+#s1{
+    font-family: Arial, Verdana, SansSerif, serif;
+}
+
+section{
+    background: linear-gradient(to right, red, white,red,white, red);
+    text-align: center;
+    border: 2px black solid;
+    justify-content: center;
+    clear: both;
+
+}
+
+table, td{
+    text-align: center;
+    font-size: 20px;
+    border:1px solid black;
+    padding: 10px;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+}
+
+.column{
+    background: linear-gradient(to top, yellow, red, black)fixed;
+    border: black 2px solid;
+    justify-content: center;
+    width: 40%;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+    float:left;
+    margin:52px
+}
+
+.column img{
+    border: black 2px solid;
+    box-shadow: red 3px 3px 3px;
+}
+
+.s2::after{
+    content: "";
+    clear: both;
+    display: flow;
+}
+
+/* Gallery */
+.imagecontainer{
+    float: none;
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to top, red, lightcoral, red)fixed;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    border: black 2px solid;
+    justify-content: center;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+    position: relative;
+    cursor: pointer;
+}
+
+.thumbnail{
+    max-width: 100%;
+    transition:transform 0.3s;
+}
+
+.imagecontainer:hover .thumbnail{
+    transform: scale(1.5);
+    z-index: 3;
+    cursor: zoom-in;
+}
+
+.imagecontainer img, iframe{
+    border: black 2px solid;
+}
+
+.s7 p{
+    font-size: 30px;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+}
+
+.s7 p:hover{
+    transition:transform 0.2s;
+    transform: scale(1.1) translateY(-10px);
+}
+
+.s6 address{
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: GermaniaOne, Arial, SansSerif, serif;
+}
+
+.s4 td:hover{
+    transition:transform 0.2s;
+    transform: scale(1.1) translateY(-10px);
+}
+
+th, td{
+    background-color: red;
+
+}
+
+table {
+    background-color: white;
+}
+
+footer{
+    background: linear-gradient(to top, yellow, red, black);
+    color:white;
+}
+
+.s5 img{
+    border: black 2px solid;
+}
+
+/* Testimonials*/
+.s5 div{
+    border: black 2px solid;
+    background:linear-gradient(to top, yellow, red, black)fixed;
+    box-sizing: content-box;
+    display: inline-block;
+    justify-content: center;
+    width: 30%;
+    padding: 5px;
+    font-family: Verdana, serif;
+}
+
+.s5{
+    padding-bottom: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

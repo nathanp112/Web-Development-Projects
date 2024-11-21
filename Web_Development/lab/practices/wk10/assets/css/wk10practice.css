@@ -1,0 +1,60 @@
+:root{
+    --font-color: green;
+    --font-hover-color: orange;
+
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content:center;
+    height:100vh; /* viewport height units, to stretch body as tall as screen*/
+    font-family:sans-serif;
+}
+
+.container{
+    background-color: #ddd;
+    width: 600px;
+
+}
+
+.form-group{
+    margin-bottom: 1.5px;
+
+}
+
+.form-label{
+    font-size:1.75em;
+    color:var(--font-color);
+    display: block; /*to make label appear above input field */
+    opacity: 5; /*how much the content behind the elements is hidden*/
+
+}
+
+.form-control::placeholder{
+color: red;
+}
+
+.form-control{
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ccc;
+    border-style: none none solid none;
+    font-size: 1.25em;
+    width: 595px;
+
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: var(--font-hover-color);
+    outline: none;
+}
+
+.btn:hover{
+    border-color: var(--font-hover-color);
+}
+
+textarea{
+    resize: none;
+}

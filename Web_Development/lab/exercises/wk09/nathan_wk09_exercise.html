@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 9 Exercise</title>
+    <meta name="description" content="Week 9 Exercise">
+    <meta name="keywords" content="=Week 9 Exercise">
+    <meta name="Author" content="Nathan Prince">
+    <link rel="shortcut icon" href="assets/img/favicon4.ico">
+
+    <style>
+
+        html{
+            background-color: cadetblue;
+        }
+
+        th, td{
+            background-color: lightgray;
+        }
+
+        table {
+            border: black 1px solid;
+            background-color: goldenrod;
+            box-shadow: black 1px 1px 1px 1px;
+        }
+
+        table, td {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 5px ;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .bluerows{
+            background-color: lightblue;
+        }
+
+        .table td:hover {
+            transition: transform 0.2s;
+            transform: scale(1.1) translateY(-10px);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<table class="table">
+    <caption>Student Marks</caption>
+    <thead class="thead">
+    <tr>
+        <th class="bluerows" class="name"><strong>Name</strong></th>
+        <th class="bluerows" class="subjects"><strong>Subjects</strong></th>
+        <th class="bluerows" class="marks"><strong>Marks</strong></th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">Hillary</td>
+        <td>Advanced Web Dev</td>
+        <td>90</td>
+
+    </tr>
+    <tr>
+
+        <td class="bluerows">Operating Systems</td>
+        <td class="bluerows">75</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Larry</td>
+        <td>Advanced Web Dev </td>
+        <td>91</td>
+    </tr>
+
+    <tr>
+
+        <td class="bluerows">Operating Systems</td>
+        <td class="bluerows">75</td>
+    </tr>
+
+    <tr>
+        <td colspan="3">Total Average: 82.75</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="bluerows">Total Number of Students</td>
+
+        <td class="bluerows">2</td>
+    </tr>
+
+    </tbody>
+    </table>
+
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+</body>
+
+</html>

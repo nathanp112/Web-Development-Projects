@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 10 Practice</title>
+  <meta name="description" content="Forms">
+  <meta name="keywords" content="Form 3">
+  <meta name="Author" content="Nathan Prince">
+
+  <style>
+
+    .controls{
+      padding-top: 1rem;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr 2fr;
+      gap: .7rem;
+    }
+
+    label{
+      font-size:.8rem;
+      justify-content: end;
+
+    }
+
+    input[type='reset'],
+    input[type='submit']{
+      width: 5rem;
+      justify-content: end;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<h2>HTML Forms</h2>
+
+<form method="post" action="action.php">
+<fieldset> <!-- fieldset element group several controls including label -->
+  <legend>Details</legend> <!-- element caption for an item -->
+  <label for="fname">First Name</label><br>
+  <input type="text" name="fname" id="fname" value="Jeff"><br>
+  <label for="lname">Last Name</label><br>
+  <input type="text" name="lname" id="lname" value="Kingston"><br><br>
+  <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+<br><hr><hr>
+
+<form>
+  <div class="controls">
+    <label for="id">User ID</label>
+    <input type="text" id="id" name="id">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+
+<br><hr><hr>
+
+<p>Choose your favorite Web Language</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="html">
+  <label for="html">HTML</label>
+
+  <input type="radio" id="css" name="fav_language" value="css">
+  <label for="css">CSS</label>
+
+  <input type="radio" id="javascript" name="fav_language" value="javascript">
+  <label for="javascript">Javascript</label>
+
+</form>
+
+<br><hr><hr>
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+  <label for="vehicle1">I have a bike</label>
+
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">I have a car</label>
+
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+  <label for="vehicle3">I have a boat</label>
+
+</form>
+
+<script src=https://my.gblearn.com/js/loadscript.js></script>
+
+
+
+</body>
+</html>
